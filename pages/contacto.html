@@ -19,20 +19,57 @@
 
         <nav class="nav1">
             <ul>
-            <li><a href="index.html">  |Home|  </a></li>
-            <li><a href="pages/recetas.html">  |Recetas|  </a></li>
-            <li><a href="pages/nutritips.html">  |NutriTips|  </a></li>
-            <li><a href="#">  |Noticias|  </a></li>
-            <li><a href="#">  |Contacto|  </a></li>
-            </ul>
+                <li><a href="../index.html">  |Home|  </a></li>
+                <li><a href="../pages/tortas.html">  |Tortas|  </a></li>
+                <li><a href="../pages/boxes.html">  |Boxes|  </a></li>
+                <li><a href="../pages/mesas dulces.html">  |Mesas Dulce|  </a></li>
+                <li><a href="pages/contacto.html">  |Contacto|  </a></li>
+            </ul>   
             
         </nav>
 
     </header>
 
-    <h2 class="titulo2">Receta rapida de hoy!!</h2>
-    <section class="sec sec2">
-    </section>
+    <form action="enviar.php" method="post" enctype="text/plain">
+
+
+
+        <legend class="contacto"><strong> <u>CONTACTANOS</u></strong> </legend > <br>
+
+        <fieldset>
+
+        <label for="nombre"><strong>Nombre: </strong></label><br>
+        <input class="label"name="nombre" type="text" placeholder="Escribe tu Nombre..."required><br><br>
+
+        <label for="apellido"><strong>Apellido:</strong></label><br>
+        <input class="label" name="apellido" type="text" placeholder="Escribe tu apellido..."required><br>
+
+        <label  for="Fecha de nacimiento"><strong>Fecha de nacimiento:</strong></label><br>
+        <input class="label" type="date" required><br> <br>
+    
+        <label for="mail1"><strong>Mail:</strong></label><br>
+        <input class="label" name="mail1" type="mail" placeholder="Escribe tu Mail..."required><br><br>
+    
+        <label for="telefono"><strong>Teléfono:</strong></label><br>
+        <input class="label" name="telelefono" type="real number" placeholder="Escribe tu teléfono..."><br><br>
+
+        <label  for="asunto"><strong>Asunto:</strong></label><br>
+        <input class="label" name="asunto" type="text" required> <br> <br>
+
+        <textarea class="label" name="" id="" cols="60" rows="7" placeholder="Escribe tu comentario..." required></textarea> <br>
+
+        <input class="submit" type="submit">
+        <input class="reset" type="reset">
+        <br><br>
+
+        </fieldset>
+
+    </form>
+
+    <p>
+        <br>
+        <br>
+    </p>
 
 
     <footer>
