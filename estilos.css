@@ -233,7 +233,7 @@ grid-template-areas: home1;
 
 /*----------------------------------------------Empieza Boxes--------------------------------------------------*/
 
-    .h1box{
+.h1box{
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         word-spacing: 10px;
         letter-spacing: 5px;
@@ -344,7 +344,7 @@ grid-template-areas: home1;
         background-position: center;
         }
                 
-        .parrafobox{
+.parrafobox{
             font-family: var(--font2);
             font-size:40px;
             font-weight: 900px;
@@ -364,33 +364,296 @@ grid-template-areas: home1;
 
 
     /*------------------------------------------Empieza Mesa Dulce-------------------------------------------------*/
+.h1MD{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+
+}
+
+.contenedorMD{
+            height: 80%;
+            background-color: rgb(247, 243, 189);
+            border: 2px solid #000;
+            width: 90%;
+            margin: auto;
+            padding: 120px;
+            border-radius: 60px;
+            display: grid;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-template-areas: "box1 box2 box3 box3"
+                                "box1 box4 box5 box6"
+                                "box7 box4 box8 box8";
+}
+                
+.itemMD{
+        padding: 20px;
+        min-height: 200px;
+        min-width: 200px;
+        background-color: aqua;
+        border: 2px solid rgb(231, 67, 163);
+                    
+    }
+
+.item:hover{
+            transform: scale(1);
+            transition: 0.7s;
+            box-shadow: 5px 5px 10px 1px #000;
+        /*            box-shadow: eje-x eje-y blur/desenfoque spread/propagacion #color;*/
+    }
+                
+.MD1{
+        /*grid-template-areas: "box1";*/
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: coral;
+        background-image: url(img/MD/galles\ tematica\ trfms.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+
+.MD2{
+        /*grid-template-areas: "box2";*/
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: cadetblue;
+        background-image: url(img/MD/minibudin.jpg);
+        background-size:cover;
+        background-position: center;
+        border:2px solid rgb(231, 67, 163); 
+    }
+
+.MD3{
+        /*grid-template-areas: "box3";*/
+        grid-column-start: 3;
+        grid-column-end: 5;
+        background-color: fuchsia;
+        background-image: url(img/MD/mesa\ dulce1.jpg);
+        background-size: cover;
+        background-position:center 250px ;
+    }
+
+.MD4{
+        grid-template-areas: "box4";
+        grid-column-start:3;
+        grid-column-end:5 ;
+        background-color: forestgreen;
+        background-image: url(img/MD/mesa1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.MD5{
+        grid-template-areas:"box5";
+        background-color: firebrick;
+        background-image: url(img/MD/torta\ tematica\ spider.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.MD6{
+        /*grid-template-areas:"box6";*/
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: dodgerblue;
+        background-image: url(img/MD/torta\ tematica\ bb\ shark.jpg);
+        background-size: cover;
+        background-position:40%;
+    }
+
+.MD7{
+        grid-template-areas: "box7";
+        background-color: deeppink;
+        background-image: url(img/MD/muffins\ cumple.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.MD8{
+        grid-template-areas: "box8";
+        background-color: darkviolet;
+        background-image: url(img/MD/mesa2.jpg);
+        background-size: cover;
+        background-position: center;
+        }
+                
+.parrafoMD{
+            font-family: var(--font2);
+            font-size:40px;
+            font-weight: 900px;
+            font-style: italic;
+            font:bolder;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-align: center;
+            color: darkmagenta;
+            text-decoration: solid black
+        }       
+                
+
     /*------------------------------------------Termina Mesa Dulce-------------------------------------------------*/
 
 
 
 
     /*----------------------------------------------Empieza Tortas----------------------------------------------------*/
+
+.h1torta{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+
+}
+
+.contenedortorta{
+            height: 80%;
+            background-color: rgb(247, 243, 189);
+            border: 2px solid #000;
+            width: 90%;
+            margin: auto;
+            padding: 120px;
+            border-radius: 60px;
+            display: grid;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-template-areas: "box1 box2 box3 box3"
+                                "box1 box4 box5 box6"
+                                "box7 box4 box8 box8";
+}
+                
+.itemtorta{
+        padding: 20px;
+        min-height: 200px;
+        min-width: 200px;
+        background-color: aqua;
+        border: 2px solid rgb(231, 67, 163);
+                    
+    }
+
+.item:hover{
+            transform: scale(1);
+            transition: 0.7s;
+            box-shadow: 5px 5px 10px 1px #000;
+        /*            box-shadow: eje-x eje-y blur/desenfoque spread/propagacion #color;*/
+    }
+                
+.torta1{
+        /*grid-template-areas: "box1";*/
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: coral;
+        background-image: url(img/tortas/torta\ oreo.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+
+.torta2{
+        /*grid-template-areas: "box2";*/
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: cadetblue;
+        background-image: url(img/tortas/torta\ brownie.jpg);
+        background-size:cover;
+        background-position: center;
+        border:2px solid rgb(231, 67, 163); 
+    }
+
+.torta3{
+        /*grid-template-areas: "box3";*/
+        grid-column-start: 3;
+        grid-column-end: 5;
+        background-color: fuchsia;
+        background-image: url(img/tortas/cheese\ frroj.jpg);
+        background-size: cover;
+        background-position:center 250px ;
+    }
+
+.torta4{
+        grid-template-areas: "box4";
+        grid-column-start:3;
+        grid-column-end:5 ;
+        background-color: forestgreen;
+        background-image: url(img/tortas/torta\ lemon.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.torta5{
+        grid-template-areas:"box5";
+        background-color: firebrick;
+        background-image: url(img/tortas/mini\ cake\ choco.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.torta6{
+        /*grid-template-areas:"box6";*/
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: dodgerblue;
+        background-image: url(img/tortas/frola.jpg);
+        background-size: cover;
+        background-position:40%;
+    }
+
+.torta7{
+        grid-template-areas: "box7";
+        grid-column-start:3;
+        grid-column-end:5 ;
+        background-color: deeppink;
+        background-image: url(img/tortas/cheese\ ddl.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+.torta8{
+        grid-template-areas: "box8";
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: darkviolet;
+        background-image: url(img/tortas/marquise1.jpg);
+        background-size: cover;
+        background-position: center;
+        }
+                
+.parrafotorta{
+            font-family: var(--font2);
+            font-size:40px;
+            font-weight: 900px;
+            font-style: italic;
+            font:bolder;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-align: center;
+            color: darkmagenta;
+            text-decoration: solid black
+        }       
+                
+
     /*------------------------------------------Termina Tortas--------------------------------------------------------*/
 
 
-    /*------------------------------------Empieza Tortas Tematicas-----------------------------------------------------*/
-    /*------------------------------------Termina Tortas Tematicas-----------------------------------------------------*/
-
     /*------------------------------------------Empieza Contacto----------------------------------------------------------*/
 
-    .contacto{
+.h1contacto{
         text-align:center;
         color: rgb(106, 82, 128);
         font-size: 40px;
-        font-size: 30px;
-        font-family: var(--font2);
+        font-weight: 900px;
+        font-family: var(--font1);
         font-variant:normal;
         margin-bottom: 5px;
         text-shadow: 5px 5px 5px rgb(248, 151, 151) ;
         text-transform: capitalize;
-        }
+    }
 
-    fieldset{
+fieldset{
+        padding: 30px;
         margin: auto;
         background-color: darkgray;
         background-image:url(img/contactoimg/torta\ marquis.jpg);
@@ -402,20 +665,21 @@ grid-template-areas: home1;
         line-height:16px ;
         font-size: 16px;
         font-style: italic;
+        text-transform: uppercase;
         color: rgb(193, 29, 226);
         background-position: center;
         }
 
-    .label{
+.etiquetacontacto{
         border-radius: 10px;
         border-color: red;
         }
 
-    .submit{
+.submit{
         background-color: rgb(216, 58, 216);
         }
 
-    .reset{
+.reset{
         background-color: rgb(243, 240, 79);
         }
 
